@@ -1,5 +1,5 @@
 const temp = require('./fetchTemp.js')
-const zmq = require('./zmqWatcher.js')
+const { init } = require('./zmqWatcher.js')
 
 /// IOTA Setup
 const IOTA = require('@iota/core')
@@ -33,12 +33,25 @@ const sendTx = data => {
     })
 }
 
-const main = async () => {
-  // Capture Data
+const sendTemp = async () => {
+  //   Capture Data
   const data = await temp()
   // Send the data
   console.log('Current temp: ' + data)
-  sendTx(data)
+  const message = Converter.asciiToTrytes(JSON.stringify({ temperature: data }))
+  const transactions = [
+    {
+      value: 0,
+      address: dataLocation, // Where the data is being sent
+      message: message // The message converted into trytes
+    }
+  ]
+  sendTx(transactions)
 }
 
-main()
+const sendAddress = () => {
+  console.log('New message found!')
+}
+
+init(sendAddress)
+setTimeout(() => sendTemp(), 20000)

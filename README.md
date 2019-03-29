@@ -5,7 +5,7 @@ Simple demo for taking environmental data and publishing it to the Tangle.
 ### Setup
 
 ```bash
-git clone https://github.com/iota-community/raspberypi-pubsub
+git clone https://github.com/iota-community/raspberrypi-pubsub
 
 cd raspberypi-pubsub
 
