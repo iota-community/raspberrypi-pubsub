@@ -37,6 +37,7 @@ const main = async () => {
   // Capture Data
   const data = await temp()
   // Send the data
+  console.log('Current temp: ' + data)
   sendTx(data)
 }
 
