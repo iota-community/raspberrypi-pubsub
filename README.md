@@ -55,11 +55,13 @@ The `message` field contains the temperature data in trytes. To convert the tryt
 
 ### Response
 
-```json
+```bash
 Starting app
 Current temp: 35.4805409354
 Sending transaction
 Transfer successfully sent
+```
+```js
 { hash:
    'GTJICLAKCQOANGP9WZRCYIQQIJTQCMPLTAKEFWPXOSOUWALGNBBDYOWTWQSM9MRLEIMVHGMLDALYLH999',
   signatureMessageFragment:
