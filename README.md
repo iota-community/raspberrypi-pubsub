@@ -8,7 +8,7 @@ To use this demo, you need the following:
 
 * [An Enviro Phat sensor board](https://shop.pimoroni.com/products/enviro-phat) connected to a Raspberry Pi
 
-![Enviro Phat connected to a Raspberry Pi 3B+](raspberrypi-enviro-phat.jpg)
+<img src="raspberrypi-enviro-phat.jpg" width="300">
 
 * [An LTS version or the latest version of Node.js and NPM](https://nodejs.org/en/download/)
 
