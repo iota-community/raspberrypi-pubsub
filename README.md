@@ -8,7 +8,7 @@ To use this demo, you need the following:
 
 * [An Enviro Phat sensor board](https://shop.pimoroni.com/products/enviro-phat) connected to a Raspberry Pi
 
-  ![Enviro Phat connected to a Raspberry Pi 3B+](raspberrypi-enviro-phat.jpg)
+![Enviro Phat connected to a Raspberry Pi 3B+](raspberrypi-enviro-phat.jpg)
 
 * [An LTS version or the latest version of Node.js and NPM](https://nodejs.org/en/download/)
 
@@ -45,7 +45,7 @@ In the console, you should see that the current temperature in Celcius is sent a
 
 ![Response data](raspberrypi-pubsub.gif)
  
-**Note:** To check that your transaction is on the Devnet Tangle, you can copy the value of the `hash` field and paste it into the search bar of the Devnet explorer.
+**Note:** To check that your transaction is on the Devnet Tangle, you can copy the value of the `hash` field and paste it into the search bar of the [Devnet explorer](https://devnet.thetangle.org/).
  
 ![Devnet Tangle explorer](tangle-explorer.png)
 
