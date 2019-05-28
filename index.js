@@ -2,13 +2,15 @@ const temp = require('./fetchTemp.js')
 const { init } = require('./zmqWatcher.js')
 
 /// IOTA Setup
-const IOTA = require('@iota/core')
-const Converter = require('@iota/converter')
-const iota = IOTA.composeAPI({ provider: 'https://nodes.devnet.iota.org:443' })
+const IOTA = require('@iota/core');
+const Converter = require('@iota/converter');
+const iota = IOTA.composeAPI({ provider: 'https://nodes.devnet.iota.org:443' });
 const iotaSeed =
-  'PUEOTSEITFEVEWCWBTSIZM9NKRGJEIMXTULBACGFRQK9IMGICLBKW9TTEVSDQMGWKBXPVCBMMCXWMNPDX'
+  'PUEOTSEITFEVEWCWBTSIZM9NKRGJEIMXTULBACGFRQK9IMGICLBKW9TTEVSDQMGWKBXPVCBMMCXWMNPDX';
 const dataLocation =
-  'DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DAT'
+  'DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DATA9ADDRESS9DAT';
+
+console.log("Starting app");
 
 /// Send IOTA Transaction
 const sendTx = data => {

@@ -1,0 +1,24 @@
+{
+  "name": "raspberrypi-pubsub",
+  "version": "1.0.0",
+  "description": "Simple demo for taking environmental data and publishing it to the Tangle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iota-community/raspberrypi-pubsub.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iota-community/raspberrypi-pubsub/issues"
+  },
+  "homepage": "https://github.com/iota-community/raspberrypi-pubsub#readme",
+  "dependencies": {
+    "@iota/converter": "^1.0.0-beta.12",
+    "@iota/core": "^1.0.0-beta.12",
+    "zeromq": "^5.1.0"
+  }
+}
