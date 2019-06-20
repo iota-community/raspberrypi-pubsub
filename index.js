@@ -51,8 +51,9 @@ const sendTemp = async () => {
   sendTx(transactions)
 }
 
-const sendAddress = () => {
-  console.log('New message found!')
+const sendAddress = (txHash) => {
+  console.log('New message found!');
+  console.log('Transaction confirmed: ' txHash);
 }
 
 init(sendAddress)
