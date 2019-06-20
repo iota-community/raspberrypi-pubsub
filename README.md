@@ -44,12 +44,6 @@ For help setting up the Enviro Phat, you can follow the [Soldering guide](https:
 In the console, you should see that the current temperature in Celcius is sent as a transaction to a node on the Devnet.
 
 ![Response data](raspberrypi-pubsub.gif)
- 
-**Note:** To check that your transaction is on the Devnet Tangle, you can copy the value of the `hash` field and paste it into the search bar of the [Devnet explorer](https://devnet.thetangle.org/).
- 
-![Devnet Tangle explorer](tangle-explorer.png)
-
-The `message` field contains the temperature data.
 
 ### Response
 
