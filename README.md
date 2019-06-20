@@ -49,9 +49,7 @@ In the console, you should see that the current temperature in Celcius is sent a
  
 ![Devnet Tangle explorer](tangle-explorer.png)
 
-The `message` field contains the temperature data in trytes. To convert the trytes to ASCII characters, use one of the converter functions in the client libraries.
-
-[Learn how to convert data between trytes and ASCII characters](https://docs.iota.org/docs/iota-basics/0.1/how-to-guides/convert-data-to-trytes).
+The `message` field contains the temperature data.
 
 ### Response
 
