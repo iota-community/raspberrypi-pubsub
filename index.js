@@ -40,7 +40,7 @@ const sendTemp = async () => {
   const data = await temp();
   // Send the data
   console.log('Current temp: ' + data);
-  sendTx(transactions);
+  sendTx(data);
 }
 
 const sendAddress = (txHash) => {
