@@ -1,10 +1,10 @@
-# IOTA Raspberry Pi Demo
+# Raspberry Pi sensor data publisher
 
 This application allows you to use one command to start sending sensor data (the current temperature in Celsius) to the Devnet Tangle.
 
 ## Prerequisites
 
-To use this demo, you need the following:
+To use this application, you need the following:
 
 * [An Enviro Phat sensor board](https://shop.pimoroni.com/products/enviro-phat) connected to a Raspberry Pi
 
