@@ -1,5 +1,5 @@
-const temp = require('./fetchTemp.js')
-const { init } = require('./zmqWatcher.js')
+const temp = require('./fetchTemp.js');
+const { init } = require('./zmqWatcher.js');
 
 /// IOTA Setup
 const IOTA = require('@iota/core');
@@ -14,41 +14,33 @@ console.log("Starting app");
 
 /// Send IOTA Transaction
 const sendTx = data => {
-  const message = Converter.asciiToTrytes(JSON.stringify({ temperature: data }))
+  const message = Converter.asciiToTrytes(JSON.stringify({ temperature: data }));
   const transactions = [
     {
       value: 0,
       address: dataLocation, // Where the data is being sent
       message: message // The message converted into trytes
     }
-  ]
+  ];
 
   iota
     .prepareTransfers(iotaSeed, transactions)
     .then(trytes => iota.sendTrytes(trytes, 3, 9))
     .then(bundle => {
-      console.log('Transfer successfully sent')
+      console.log('Transfer successfully sent');
       bundle.map(tx => console.log(tx))
     })
     .catch(err => {
-      console.log(err)
+      console.log(err);
     })
 }
 
 const sendTemp = async () => {
   //   Capture Data
-  const data = await temp()
+  const data = await temp();
   // Send the data
-  console.log('Current temp: ' + data)
-  const message = Converter.asciiToTrytes(JSON.stringify({ temperature: data }))
-  const transactions = [
-    {
-      value: 0,
-      address: dataLocation, // Where the data is being sent
-      message: message // The message converted into trytes
-    }
-  ]
-  sendTx(transactions)
+  console.log('Current temp: ' + data);
+  sendTx(transactions);
 }
 
 const sendAddress = (txHash) => {
@@ -56,5 +48,5 @@ const sendAddress = (txHash) => {
   console.log('Transaction confirmed: ' txHash);
 }
 
-init(sendAddress)
-setTimeout(() => sendTemp(), 20000)
+init(sendAddress);
+setInterval(() => sendTemp(), 60000);
