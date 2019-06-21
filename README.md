@@ -1,10 +1,10 @@
-# IOTA Raspberry Pi Demo
+# Raspberry Pi sensor data publisher
 
 This application allows you to use one command to start sending sensor data (the current temperature in Celsius) to the Devnet Tangle.
 
 ## Prerequisites
 
-To use this demo, you need the following:
+To use this application, you need the following:
 
 * [An Enviro Phat sensor board](https://shop.pimoroni.com/products/enviro-phat) connected to a Raspberry Pi
 
@@ -44,14 +44,6 @@ For help setting up the Enviro Phat, you can follow the [Soldering guide](https:
 In the console, you should see that the current temperature in Celcius is sent as a transaction to a node on the Devnet.
 
 ![Response data](raspberrypi-pubsub.gif)
- 
-**Note:** To check that your transaction is on the Devnet Tangle, you can copy the value of the `hash` field and paste it into the search bar of the [Devnet explorer](https://devnet.thetangle.org/).
- 
-![Devnet Tangle explorer](tangle-explorer.png)
-
-The `message` field contains the temperature data in trytes. To convert the trytes to ASCII characters, use one of the converter functions in the client libraries.
-
-[Learn how to convert data between trytes and ASCII characters](https://docs.iota.org/docs/iota-basics/0.1/how-to-guides/convert-data-to-trytes).
 
 ### Response
 
