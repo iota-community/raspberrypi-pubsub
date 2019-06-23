@@ -12,6 +12,8 @@ To use this demo, you need the following:
 
 * [An LTS version or the latest version of Node.js and NPM](https://nodejs.org/en/download/)
 
+Note:  If you are using a Raspberry Pi Zero W then follow the instructions in this [video](https://www.google.com/search?q=upgrade+node+on+pi+zero+w&oq=upgrade+node+&aqs=chrome.0.69i59j0j69i57j0l3.2537j0j4&sourceid=chrome&ie=UTF-8#kpvalbx=1) to install the latest version of Node.js and NPM
+
 * [Git](https://git-scm.com/download/linux)
 
 For help setting up a Raspberry Pi, you can follow [these instructions](https://medium.com/@lambtho/raspberry-setup-dcb23e8ba88).
